@@ -3,14 +3,14 @@
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
 
-module Network.Hard.Map
+module Hard.Map
   ( Map (..),
     MapBox (..),
   )
 where
 
 import Control.Monad.IO.Class
-import Network.Hard.Map.Types
+import Hard.Map.Types
 
 -- | The Map typeclass represents a stream mapping function
 class Map m where

@@ -1,12 +1,13 @@
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE ExistentialQuantification #-}
-{-# LANGUAGE ImportQualifiedPost #-}
 
-module Network.Hard.Map.Types where
+-- {-# LANGUAGE ImportQualifiedPost #-}
 
-import Data.ByteString qualified as BS
+module Hard.Map.Types where
+
+import qualified Data.ByteString as BS
 import GHC.Generics
-import Network.Socket qualified as NS
+import qualified Network.Socket as NS
 
 -- | Connection ID for tracking
 newtype CID = CID String

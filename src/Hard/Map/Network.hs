@@ -1,8 +1,8 @@
-{-# LANGUAGE ImportQualifiedPost #-}
+-- {-# LANGUAGE ImportQualifiedPost #-}
 
 -- {-# LANGUAGE RecordWildCards #-}
 
-module Network.Hard.Map.Network
+module Hard.Map.Network
   ( recv,
     sendAll,
     connect,
@@ -10,10 +10,10 @@ module Network.Hard.Map.Network
 where
 
 import Control.Monad.IO.Class
-import Data.ByteString qualified as BS
--- import Network.Hard.Map.Types
-import Network.Socket qualified as NS
-import Network.Socket.ByteString qualified as NSB
+import qualified Data.ByteString as BS
+-- import Hard.Map.Types
+import qualified Network.Socket as NS
+import qualified Network.Socket.ByteString as NSB
 
 -- | Receive exactly n bytes from socket
 recv :: (MonadIO io) => NS.Socket -> Int -> io BS.ByteString

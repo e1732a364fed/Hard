@@ -26,8 +26,8 @@ cabal build
 ## Usage
 
 ```haskell
-import Network.Hard.Map
-import Network.Hard.Map.Socks5
+import Hard.Map
+import Hard.Map.Socks5
 
 -- Create a SOCKS5 proxy
 proxy = Socks5Map {

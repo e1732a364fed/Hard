@@ -1,8 +1,8 @@
-{-# LANGUAGE ImportQualifiedPost #-}
+-- {-# LANGUAGE ImportQualifiedPost #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE RecordWildCards #-}
 
-module Network.Hard.Map.Socks5
+module Hard.Map.Socks5
   ( Socks5Map (..),
     Socks5Config (..),
     AuthMethod (..),
@@ -12,14 +12,14 @@ where
 import Control.Monad.IO.Class
 import Data.Binary.Get
 import Data.Binary.Put
-import Data.ByteString qualified as BS
-import Data.ByteString.Lazy qualified as LBS
+import qualified Data.ByteString as BS
+import qualified Data.ByteString.Lazy as LBS
 import Data.Word (Word8)
-import Network.Hard.Map
-import Network.Hard.Map.Network
-import Network.Hard.Map.Types
-import Network.Socket qualified as NS
-import Network.Socket.ByteString qualified as NSB
+import Hard.Map
+import Hard.Map.Network
+import Hard.Map.Types
+import qualified Network.Socket as NS
+import qualified Network.Socket.ByteString as NSB
 
 -- | SOCKS5 authentication methods
 data AuthMethod = NoAuth | UserPass BS.ByteString BS.ByteString

@@ -12,13 +12,13 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Network.Hard.Map
-                     , Network.Hard.Map.Fold
-                     , Network.Hard.Map.Types
-                     , Network.Hard.Map.Network
-                     , Network.Hard.Map.Socks5
-                     , Network.Hard.Map.Http
-                     , Network.Hard.Map.Trojan
+  exposed-modules:     Hard.Map
+                     , Hard.Map.Fold
+                     , Hard.Map.Types
+                     , Hard.Map.Network
+                     , Hard.Map.Socks5
+                     , Hard.Map.Http
+                     , Hard.Map.Trojan
   build-depends:       base >= 4.7 && < 5
                      , async
                      , bytestring
