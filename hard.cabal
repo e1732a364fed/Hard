@@ -1,4 +1,4 @@
-name:                hsimple
+name:                hard
 version:             0.1.0.0
 synopsis:            A proxy library in Haskell
 description:         A proxy library that supports various protocols
@@ -12,13 +12,13 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Network.Hsimple.Map
-                     , Network.Hsimple.Map.Fold
-                     , Network.Hsimple.Map.Types
-                     , Network.Hsimple.Map.Network
-                     , Network.Hsimple.Map.Socks5
-                     , Network.Hsimple.Map.Http
-                     , Network.Hsimple.Map.Trojan
+  exposed-modules:     Network.Hard.Map
+                     , Network.Hard.Map.Fold
+                     , Network.Hard.Map.Types
+                     , Network.Hard.Map.Network
+                     , Network.Hard.Map.Socks5
+                     , Network.Hard.Map.Http
+                     , Network.Hard.Map.Trojan
   build-depends:       base >= 4.7 && < 5
                      , async
                      , bytestring

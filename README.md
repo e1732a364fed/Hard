@@ -1,4 +1,4 @@
-# Hsimple
+# Hard
 
 A proxy library written in Haskell, ported from the Rust version.
 
@@ -26,8 +26,8 @@ cabal build
 ## Usage
 
 ```haskell
-import Network.Hsimple.Map
-import Network.Hsimple.Map.Socks5
+import Network.Hard.Map
+import Network.Hard.Map.Socks5
 
 -- Create a SOCKS5 proxy
 proxy = Socks5Map {

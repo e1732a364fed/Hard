@@ -2,7 +2,7 @@
 
 -- {-# LANGUAGE RecordWildCards #-}
 
-module Network.Hsimple.Map.Network
+module Network.Hard.Map.Network
   ( recv,
     sendAll,
     connect,
@@ -11,7 +11,7 @@ where
 
 import Control.Monad.IO.Class
 import Data.ByteString qualified as BS
--- import Network.Hsimple.Map.Types
+-- import Network.Hard.Map.Types
 import Network.Socket qualified as NS
 import Network.Socket.ByteString qualified as NSB
 

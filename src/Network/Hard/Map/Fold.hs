@@ -3,7 +3,7 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 {-# LANGUAGE TypeApplications #-}
 
-module Network.Hsimple.Map.Fold
+module Network.Hard.Map.Fold
   ( FoldParams (..),
     FoldResult (..),
     fold,
@@ -13,8 +13,8 @@ where
 import Control.Monad.IO.Class
 import qualified Data.ByteString as BS
 import Data.Maybe (isJust)
-import Network.Hsimple.Map
-import Network.Hsimple.Map.Types
+import Network.Hard.Map
+import Network.Hard.Map.Types
 
 -- | Parameters for folding Maps
 data FoldParams = FoldParams

@@ -2,7 +2,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE RecordWildCards #-}
 
-module Network.Hsimple.Map.Socks5
+module Network.Hard.Map.Socks5
   ( Socks5Map (..),
     Socks5Config (..),
     AuthMethod (..),
@@ -15,9 +15,9 @@ import Data.Binary.Put
 import Data.ByteString qualified as BS
 import Data.ByteString.Lazy qualified as LBS
 import Data.Word (Word8)
-import Network.Hsimple.Map
-import Network.Hsimple.Map.Network
-import Network.Hsimple.Map.Types
+import Network.Hard.Map
+import Network.Hard.Map.Network
+import Network.Hard.Map.Types
 import Network.Socket qualified as NS
 import Network.Socket.ByteString qualified as NSB
 

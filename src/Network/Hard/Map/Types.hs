@@ -2,7 +2,7 @@
 {-# LANGUAGE ExistentialQuantification #-}
 {-# LANGUAGE ImportQualifiedPost #-}
 
-module Network.Hsimple.Map.Types where
+module Network.Hard.Map.Types where
 
 import Data.ByteString qualified as BS
 import GHC.Generics
