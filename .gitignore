@@ -1,0 +1,33 @@
+# Haskell编译文件
+/dist/
+/dist-newstyle/
+/.cabal-sandbox/
+/cabal.sandbox.config
+*.hi
+*.o
+*.dyn_hi
+*.dyn_o
+
+# Stack文件
+/.stack-work/
+/stack.yaml.lock
+
+# IDE配置文件
+.ghc.environment.*
+.hie/
+.hie-bios
+
+# Cabal文件
+cabal.project.local
+cabal.project.freeze
+
+# 日志文件
+*.log
+
+# 编辑器临时文件
+*~
+*.swp
+*.swo
+
+# 其他
+.DS_Store 

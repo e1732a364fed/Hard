@@ -1,0 +1,37 @@
+name:                hsimple
+version:             0.1.0.0
+synopsis:            A proxy library in Haskell
+description:         A proxy library that supports various protocols
+license:             BSD3
+license-file:        LICENSE
+author:              Author
+maintainer:          maintainer@example.com
+category:            Network
+build-type:          Simple
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Network.Hsimple.Map
+                     , Network.Hsimple.Map.Fold
+                     , Network.Hsimple.Map.Types
+                     , Network.Hsimple.Map.Network
+                     , Network.Hsimple.Map.Socks5
+                     , Network.Hsimple.Map.Http
+                     , Network.Hsimple.Map.Trojan
+  build-depends:       base >= 4.7 && < 5
+                     , async
+                     , bytestring
+                     , network >= 3.1.2.0
+                     , network-bsd >= 2.8.1.0
+                     , network-byte-order >= 0.1.6
+                     , text
+                     , transformers
+                     , mtl
+                     , containers
+                     , stm
+                     , binary
+                     , conduit
+                     , resourcet
+  default-language:    Haskell2010
+  ghc-options:         -Wall 
